@@ -1,1 +1,0 @@
-rizad: python3 -m traceip.py
