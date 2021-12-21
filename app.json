@@ -1,0 +1,35 @@
+{
+    "name": "IP fetcher",
+    "description": "Fetch details of an IP",
+    "keywords": [
+        "IP"
+    ],
+    "website": "https://github.com/riz4d",
+    "repository": "https://github.com/riz4d/ipfetcher",
+    "success_url": "https://github.com/riz4d",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
